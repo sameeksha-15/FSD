@@ -1,0 +1,313 @@
+.registration-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.registration-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.registration-header h1 {
+  color: #1e40af;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.registration-header h2 {
+  color: #4b5563;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.registration-form-container {
+  width: 100%;
+}
+
+/* Progress steps */
+.progress-steps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.progress-steps::before {
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #e5e7eb;
+  z-index: 1;
+}
+
+.step {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.step-number {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #e5e7eb;
+  color: #4b5563;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.step.active .step-number {
+  background-color: #1e40af;
+  color: white;
+}
+
+.step.completed .step-number {
+  background-color: #10b981;
+  color: white;
+}
+
+.step-label {
+  font-size: 0.875rem;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.step.active .step-label {
+  color: #1e40af;
+  font-weight: 600;
+}
+
+.step.completed .step-label {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.step-title {
+  margin-bottom: 1.5rem;
+  color: #1e40af;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Form styling */
+.registration-form {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #4b5563;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #1e40af;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+}
+
+.form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-group small {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+/* Document upload styling */
+.document-instruction {
+  margin-bottom: 1.5rem;
+  color: #4b5563;
+  font-size: 0.9rem;
+}
+
+.document-group {
+  background-color: #f9fafb;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.file-preview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: #e5e7eb;
+  border-radius: 4px;
+}
+
+.file-preview span {
+  font-size: 0.875rem;
+  color: #374151;
+  word-break: break-all;
+}
+
+.remove-file {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.form-agreement {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #f9fafb;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+/* Form buttons */
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.prev-btn,
+.next-btn,
+.submit-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.prev-btn {
+  background-color: #e5e7eb;
+  color: #4b5563;
+  border: none;
+}
+
+.prev-btn:hover {
+  background-color: #d1d5db;
+}
+
+.next-btn {
+  background-color: #1e40af;
+  color: white;
+  border: none;
+}
+
+.next-btn:hover {
+  background-color: #1c3879;
+}
+
+.submit-btn {
+  background-color: #047857;
+  color: white;
+  border: none;
+}
+
+.submit-btn:hover {
+  background-color: #065f46;
+}
+
+.submit-btn:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.cancel-link {
+  color: #6b7280;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.cancel-link:hover {
+  color: #4b5563;
+  text-decoration: underline;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .registration-container {
+    padding: 1.5rem;
+  }
+  
+  .step-label {
+    display: none;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .form-group {
+    width: 100%;
+  }
+  
+  .form-buttons {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+  
+  .prev-btn,
+  .next-btn,
+  .submit-btn,
+  .cancel-link {
+    text-align: center;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  
+  .cancel-link {
+    order: -1;
+  }
+} 

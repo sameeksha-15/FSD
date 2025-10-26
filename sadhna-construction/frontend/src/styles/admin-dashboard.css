@@ -1,0 +1,407 @@
+/* Hire dialog styles */
+.hire-modal {
+  max-width: 500px;
+}
+
+.hire-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.credential-box {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 15px 0;
+  border: 1px solid #dee2e6;
+}
+
+.credential-row {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.credential-label {
+  font-weight: 600;
+  color: #495057;
+}
+
+.credential-value {
+  font-family: monospace;
+  background-color: #fff;
+  padding: 3px 8px;
+  border-radius: 3px;
+  border: 1px solid #ced4da;
+}
+
+.alert {
+  padding: 12px 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.alert-info {
+  background-color: #cce5ff;
+  border: 1px solid #b8daff;
+  color: #004085;
+}
+
+.form-hint {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.85rem;
+  color: #6c757d;
+  font-style: italic;
+}
+
+.form-hint strong {
+  color: #495057;
+  font-weight: 600;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+}
+
+.alert-warning {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  color: #856404;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+}
+
+.hire-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.hire-btn:hover {
+  background-color: #218838;
+}
+
+.accept-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.accept-btn:hover {
+  background-color: #218838;
+}
+
+.reject-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reject-btn:hover {
+  background-color: #c82333;
+}
+
+/* Action buttons and cells */
+.actions-cell {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  min-width: 200px;
+}
+
+.action-btn {
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.view-btn {
+  background-color: #17a2b8;
+  color: white;
+  padding: 5px 10px;
+}
+
+.view-btn:hover {
+  background-color: #138496;
+}
+
+.download-btn {
+  background-color: #6c757d;
+  color: white;
+  padding: 5px 10px;
+}
+
+.download-btn:hover {
+  background-color: #5a6268;
+}
+
+/* Highlight hired applicants */
+tr.row-hired {
+  background-color: rgba(40, 167, 69, 0.1);
+}
+
+tr.row-hired:hover {
+  background-color: rgba(40, 167, 69, 0.15);
+}
+
+.status-badge.hired {
+  background-color: #d4edda;
+  color: #155724;
+  font-weight: 600;
+}
+
+.status-badge.rejected {
+  background-color: #f8d7da;
+  color: #721c24;
+  font-weight: 600;
+}
+
+.status-badge.pending {
+  background-color: #fff3cd;
+  color: #856404;
+  font-weight: 600;
+}
+
+.detail-message {
+  margin-top: 5px;
+  white-space: pre-wrap;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.hired-info h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #28a745;
+}
+
+/* Add these styles for the enhanced application details */
+
+.large-modal {
+  max-width: 800px;
+  width: 90%;
+}
+
+.modal-content h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #1e40af;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 6px;
+}
+
+.documents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.document-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 12px;
+  background-color: #f9fafb;
+}
+
+.document-label {
+  display: block;
+  font-weight: 500;
+  color: #4b5563;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.document-action {
+  display: flex;
+  justify-content: center;
+}
+
+.document-preview {
+  text-align: center;
+  margin-top: 8px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.document-image {
+  max-width: 100%;
+  max-height: 140px;
+  object-fit: contain;
+}
+
+.detail-row {
+  margin-bottom: 12px;
+}
+
+.detail-label {
+  display: inline-block;
+  font-weight: 500;
+  width: 170px;
+  color: #4b5563;
+}
+
+.detail-value {
+  color: #111827;
+}
+
+.detail-message {
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #f9fafb;
+  border-radius: 4px;
+  color: #4b5563;
+  white-space: pre-line;
+}
+
+.credential-box {
+  margin: 15px 0;
+  padding: 15px;
+  background-color: #f9fafb;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+}
+
+.credential-row {
+  margin-bottom: 10px;
+}
+
+.credential-label {
+  display: inline-block;
+  width: 100px;
+  font-weight: 500;
+  color: #4b5563;
+}
+
+.credential-value {
+  font-family: monospace;
+  background-color: #fff;
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid #d1d5db;
+}
+
+/* Make sure the alerts look good */
+.alert {
+  padding: 12px 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.alert-success {
+  background-color: #ecfdf5;
+  border: 1px solid #10b981;
+  color: #065f46;
+}
+
+.alert-warning {
+  background-color: #fffbeb;
+  border: 1px solid #f59e0b;
+  color: #92400e;
+}
+
+.alert-info {
+  background-color: #eff6ff;
+  border: 1px solid #3b82f6;
+  color: #1e40af;
+}
+
+.alert p {
+  margin: 0;
+}
+
+.btn-sm {
+  padding: 4px 8px;
+  font-size: 0.75rem;
+} 
